@@ -1,0 +1,201 @@
+   @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+    :root{
+  		--warning : #EDD4BF;
+      --black:#000000;
+  	}
+    .bo{
+      border:1px solid red;
+    }
+    body{
+      font-family: 'Lora', serif,'anum+Gothic+Coding', sans-serif; 
+    }
+    html,body{
+      overflow-x: hidden;
+    }/*가로스크롤 생기는 부분 처리*/
+  	#topCarousel{
+  		overflow: hidden;
+  	}
+  	/*#topCarousel .carousel-item:nth-of-type(1){
+  		background: url(../img/carousel_01.png) no-repeat center/ 100%;
+  		height:100vh;
+  	}
+  	#topCarousel .carousel-item:nth-of-type(2){
+  		background: url(../img/carousel_02.png) no-repeat center/ 100%;
+  		height:100vh;
+  	}
+  	#topCarousel .carousel-item:nth-of-type(3){
+  		background: url(../img/carousel_03.png) no-repeat center/ 100%;
+  		height:100vh;
+  	}*/
+    #topCarousel .carousel-caption{
+      /*border:3px solid red;*/
+      position: absolute;
+    }
+  	#topCarousel .carousel-control-prev{
+  		left:-200px;
+  		transition: left 1s;
+  	}
+  	#topCarousel .carousel-control-next{
+  		right:-200px;
+  		transition: right 1s;
+  	}
+  	#topCarousel:hover .carousel-control-prev{
+  		left:0;	
+  	}
+  	#topCarousel:hover .carousel-control-next{
+  		right:0;	
+  	}
+  	#topCarousel .carousel-item .carousel-caption{
+  		/*border: 1px solid white;*/
+  		position:absolute;
+  	}
+  	#topCarousel .carousel-item:nth-of-type(1) .carousel-caption{
+        bottom: 40px;
+    }
+    #topCarousel .carousel-item:nth-of-type(2) .carousel-caption{
+        bottom: 40px;  
+    }
+    #topCarousel .carousel-item:nth-of-type(3) .carousel-caption{
+        bottom: 40px;
+    }
+    #topCarousel .carousel-control-prev:hover, #topCarousel .carousel-control-next:hover{
+    	color:brown;
+    }
+    #topCarousel .carousel-indicators .active{
+    	background-color:brown;
+    }
+    .loading .d-flex img{
+    	/*border:1px solid red;*/
+    	position:absolute;
+    	top:50%;
+    }
+    .loading{
+    	height:100vh;
+    }
+    .bg-warning{
+      background-color: var(--warning)!important;
+    }
+    /*네브바 text 스타일 설정*/
+    .navbar-light .navbar-nav .nav-link{
+      color:var(--black);
+    }
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav 
+    .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light 
+    .navbar-nav .show>.nav-link{
+      color:white;
+    }
+    /*네브바 너비 설정*/
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 25px;
+      padding-left: 25px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size:1.2rem;
+    }
+    #about3ce .container-fluid .row .col{
+      padding-right: 0;
+      padding-left:0;
+    }
+    /*두번재 메뉴 best 배경 이미지 넣기*/
+    #best{
+      background: url(../img/menu02_bg.png) no-repeat center / cover;
+      width:100%;
+      padding-bottom:200px;
+
+    }
+    /*#new .container .menu02_title{
+      padding-top:230px;
+    }*/
+    
+   /* 두번째 메뉴 안에 new 슬라이드*/
+    #new .container .row li{
+      cursor: pointer;
+      text-transform: uppercase;
+      font-family: 'Nanum+Gothic'
+    }
+    #new .container .row li.active{
+      cursor: pointer;
+      text-decoration: underline;
+      transform: scale(1.2);
+      color:#000000;
+    }
+    #new .container{
+      padding-top: 100px;
+      padding-bottom: 250px;
+    }
+    #new .container .nav a{
+      color:#6F6D6D;
+    }
+    /*슬라이드 아이콘 버튼*/
+    #new .carousel-control-prev-icon{
+     background-image: url(../img/carousel_prev.png);
+     widows: 25px;
+     height: 25px;
+     opacity: 1s
+    }
+    #new .carousel-control-prev{
+     position:absolute;
+     left:-15%;
+    }
+    #new .carousel-control-next-icon{
+     background-image: url(../img/carousel_next.png);
+     widows: 25px;
+     height: 25px;
+     opacity: 1s
+    }
+    #new .carousel-control-next{
+     position:absolute;
+     right:-15%;
+    }
+    /*세 번째  메뉴*/
+    #video{
+      background: url(../img/video_bg.png) no-repeat center / cover fixed;
+      height: 100vh;
+    }
+    #video .line{
+      padding-top: 20px
+    }
+    #store{
+        background: url(../img/menu05_bg.png) no-repeat center / cover fixed;
+    }
+    #store h2{
+      background-color: #c49168;
+    }
+    #store .line{
+      padding-top: 20px
+    }
+    #store footer{
+      background-color: white;
+      opacity: 0.5;
+    }
+    body {
+      position: relative;
+    }/*scorllspy 위치 잡기*/
+
+
+
+
+
+   
+
+
+
+
+
+    
+  
+
+
+
+
+   
+
+
+
+
+
+    
+    
+    
